@@ -25,3 +25,20 @@ Monter (mount) ce disque sur le point montage /home/ubuntu/tp-coaching-webforce3
 mkdir /home/ubuntu/tp-coaching-webforce3/log
 sudo mount /dev/vdc /home/ubuntu/tp-coaching-webforce3/log
 /dev/vdc        976M  2.6M  907M   1% /home/ubuntu/tp-coaching-webforce3/log
+git commit
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+git config --global user.email mohamedfettah@hotmail.fr
+ubuntu@coaching-5:~/tp-coaching-webforce3$ git config --global user.name mfettah01
+
+git push
+Username for 'https://github.com': mfettah01
+Password for 'https://mfettah01@github.com': 
+git pull
+1 file changed, 25 insertions(+)
