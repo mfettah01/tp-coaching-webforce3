@@ -39,7 +39,7 @@ Monter (mount) ce disque sur le point montage /home/ubuntu/tp-coaching-webforce3
 `sudo mount /dev/vdc /home/ubuntu/tp-coaching-webforce3/log`
 /dev/vdc        976M  2.6M  907M   1% /home/ubuntu/tp-coaching-webforce3/log
 
-#Exercice 4 - Git/Github
+# Exercice 4 - Git/Github
 Dans PyCharm allez dans File->Settings->Version control->github
 Appuyer sur la croix, en haut a gauche de cette fenetre et selectionnez log in with token.
 entrez votre token github
