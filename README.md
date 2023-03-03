@@ -47,29 +47,24 @@ Vous pouvez maintenant faire des git commit et git push depuis PyCharm
 
 Faire régulierement des commit/push dans github de votre machine local vers github Comme vous avez fait un git clone de votre projet sur votre VM, vous devez faire des git pull pour mettre jour votre Web serveur sans utiliser d'éditeur dans votre VM, ne pas faire de git push à partir de la VM sinon vous risquez d'avoir des conflits à résoudre entre les push faits de votre machine locale et ceux faits à partir de la VM.
 
-git commit
-
+`git commit`
 *** Please tell me who you are.
 
-Run
+`git config --global user.email mohamedfettah@hotmail.fr`
+`git config --global user.name mfettah01`
 
-  git config --global user.email "you@example.com"
-  git config --global user.name "Your Name"
-
-git config --global user.email mohamedfettah@hotmail.fr
-ubuntu@coaching-5:~/tp-coaching-webforce3$ git config --global user.name mfettah01
-
-git push
+`git push`
 Username for 'https://github.com': mfettah01
 Password for 'https://mfettah01@github.com': 
-git pull
+
+`git pull`
 1 file changed, 25 insertions(+)
 
 # Exercice 5 - Python
 Créez un fichier blogs.py
-nano blogs.py
+`nano blogs.py`
 
-Copier le script python suivan
+Copier le script python suivant
 ctlc + ctlv
 
 Avec l'aide de la documentation Flask, et de la documentation Python mettre des commentaires dans ce script.
@@ -89,13 +84,13 @@ def blog():
  
 app.run(host='localhost', debug=True)
 
-installation du flask avec le sudo apt install flask
+installation du flask avec le `sudo apt install flask`
 
 Ajouter une variable d'environnement FLASK_APP=blogs , mettre cette variable dans le fichier ~/.bashrc de votre user ubuntu
-nano ~/.bashrc saisie du FLASK_APP=blogs dans le fichier
+`nano ~/.bashrc` saisie du FLASK_APP=blogs dans le fichier
 
-Lancer le web server avec la commande flask run --host=0.0.0.0 -p 30101
-Changement droit avec la comande sudo chmod 777 log/
+Lancer le web server avec la commande `flask run --host=0.0.0.0 -p 30101`
+Changement droit avec la comande `sudo chmod 777 log/`
 dans nano blogs.py inserer if __name__ == '__main__': tabulation pour  app.run(host='localhost', debug=True)
 
 Vérifier avec votre navigateur en utilisant l'url http://<ip_de_votre_vm>:30101/blogs
@@ -108,20 +103,21 @@ Vérifier que le fichier record.log existe bien dans la directory log
 
 # Exercice 6 - Pare-feu
 Trouvez la commande de gestion du firewall sous ubuntu 20.04 Exemple : fermer le port 5000 et autoriser le port 30101 Vérifier l'application Web sur ces ports
-sudo ufw status
+
+`sudo ufw status`
 Status: inactive
-ubuntu@coaching-5:~/tp-coaching-webforce3$ sudo ufw enable
+`sudo ufw enable`
 Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
 Firewall is active and enabled on system startup
-ubuntu@coaching-5:~/tp-coaching-webforce3$ sudo ufw status
+`sudo ufw status`
 Status: active
-ubuntu@coaching-5:~/tp-coaching-webforce3$ sudo ufw deny 5000
+`sudo ufw deny 5000`
 Rule added
 Rule added (v6)
-ubuntu@coaching-5:~/tp-coaching-webforce3$ sudo ufw allow 30101
+`sudo ufw allow 30101`
 Rule added
 Rule added (v6)
-ubuntu@coaching-5:~/tp-coaching-webforce3$ sudo ufw status
+`sudo ufw status`
 Status: active
 
 To                         Action      From
