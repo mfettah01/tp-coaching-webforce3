@@ -3,40 +3,40 @@
 # Exercice 1 Scrum
 Instruction pour la session de coaching
 Faire un git clone de ce repo en local dans votre directory c:\projet dans Git-bash
-~git clone https://github.com/mfettah01/tp-coaching-webforce3.git~
+ `git clone https://github.com/mfettah01/tp-coaching-webforce3.git`
 
 Faire un git clone dans la home directorie de votre VM fournie
 
 # Exercice 2 - Linux
 Mettre à jour les packages de votre VM ubuntu
-sudo apt update sudo apt upgrade
+`sudo apt update sudo apt upgrade`
 
 Vérifier la version de python3 déjà installée
-python3 --version Python 3.8.10
+`python3 --version` Python 3.8.10
 
 créer un alias nommé python valide pour le user ubuntu de votre VM vérifier en faisant python -V
-nano ~/.bashrc saisie alias python='python3' Ctlx Y Entree
-pour sauvegarder l'alias source source ~/.bashrc
+`nano ~/.bashrc` saisie alias python='python3' Ctlx Y Entree
+pour sauvegarder l'alias source `source ~/.bashrc`
 
-vérifier en faisant python -V
+vérifier en faisant `python -V`
 Python 3.8.10
 
 lancement cmd pip install flask
 Command 'pip' not found, but can be installed with:
-sudo apt install python3-pip
-ubuntu@coaching-5:~/tp-coaching-webforce3$ sudo apt install python3-pip
+`sudo apt install python3-pip`
+ubuntu@coaching-5:~/tp-coaching-webforce3$ `sudo apt install python3-pip`
 pip install flask Successfully installed Ji.....
 
 # Exercice 3 - Storage
 Recherche le disque supplémentaire de 1Gb connecté à la VM
-cmd sudo fdisk -l Disk /dev/vdc: 1 GiB
+`sudo fdisk -l` Disk /dev/vdc: 1 GiB
 
 Formattez ce disque au format ext4
-sudo mkfs.ext4 /dev/vdc
+`sudo mkfs.ext4 /dev/vdc`
 
 Monter (mount) ce disque sur le point montage /home/ubuntu/tp-coaching-webforce3/log
-mkdir /home/ubuntu/tp-coaching-webforce3/log
-sudo mount /dev/vdc /home/ubuntu/tp-coaching-webforce3/log
+`mkdir /home/ubuntu/tp-coaching-webforce3/log`
+`sudo mount /dev/vdc /home/ubuntu/tp-coaching-webforce3/log`
 /dev/vdc        976M  2.6M  907M   1% /home/ubuntu/tp-coaching-webforce3/log
 
 #Exercice 4 - Git/Github
