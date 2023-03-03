@@ -3,7 +3,8 @@
 # Exercice 1 Scrum
 Instruction pour la session de coaching
 Faire un git clone de ce repo en local dans votre directory c:\projet dans Git-bash
-git clone https://github.com/mfettah01/tp-coaching-webforce3.git
+~git clone https://github.com/mfettah01/tp-coaching-webforce3.git~
+
 Faire un git clone dans la home directorie de votre VM fournie
 
 # Exercice 2 - Linux
@@ -102,6 +103,7 @@ http://170.75.160.140:30101/blogs
 ![Capture d’écran tp](https://user-images.githubusercontent.com/122970879/222707974-eb1891a9-7037-4f3c-b49f-42d0ba7862ca.png)
 
 Vérifier que le fichier record.log existe bien dans la directory log
+
 ![Capture d’écran tp 2](https://user-images.githubusercontent.com/122970879/222708767-793442bd-b588-47f8-b263-fea08677d3ed.png)
 
 # Exercice 6 - Pare-feu
