@@ -106,17 +106,22 @@ Trouvez la commande de gestion du firewall sous ubuntu 20.04 Exemple : fermer le
 
 `sudo ufw status`
 Status: inactive
+
 `sudo ufw enable`
 Command may disrupt existing ssh connections. Proceed with operation (y|n)? y
 Firewall is active and enabled on system startup
+
 `sudo ufw status`
 Status: active
 `sudo ufw deny 5000`
+
 Rule added
 Rule added (v6)
+
 `sudo ufw allow 30101`
 Rule added
 Rule added (v6)
+
 `sudo ufw status`
 Status: active
 
