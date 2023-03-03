@@ -3,6 +3,7 @@
 # Exercice 1 Scrum
 Instruction pour la session de coaching
 Faire un git clone de ce repo en local dans votre directory c:\projet dans Git-bash
+
  `git clone https://github.com/mfettah01/tp-coaching-webforce3.git`
 
 Faire un git clone dans la home directorie de votre VM fournie
@@ -15,17 +16,19 @@ Vérifier la version de python3 déjà installée
 `python3 --version` Python 3.8.10
 
 créer un alias nommé python valide pour le user ubuntu de votre VM vérifier en faisant python -V
-`nano ~/.bashrc` saisie alias python='python3' Ctlx Y Entree
-pour sauvegarder l'alias source `source ~/.bashrc`
 
-vérifier en faisant `python -V`
+saisie alias 
+`nano ~/.bashrc`  
+python='python3' Ctlx Y Entree 
+`source ~/.bashrc`
+
+vérifier en faisant 
+`python -V`
 Python 3.8.10
 
-lancement cmd pip install flask
-Command 'pip' not found, but can be installed with:
+Faire un pip install flask , suivre les instructions pour installer pip si nécessaire
 `sudo apt install python3-pip`
-ubuntu@coaching-5:~/tp-coaching-webforce3$ `sudo apt install python3-pip`
-pip install flask Successfully installed Ji.....
+pip install flask Successfully installed Ji.
 
 # Exercice 3 - Storage
 Recherche le disque supplémentaire de 1Gb connecté à la VM
@@ -35,17 +38,23 @@ Formattez ce disque au format ext4
 `sudo mkfs.ext4 /dev/vdc`
 
 Monter (mount) ce disque sur le point montage /home/ubuntu/tp-coaching-webforce3/log
+
 `mkdir /home/ubuntu/tp-coaching-webforce3/log`
+
 `sudo mount /dev/vdc /home/ubuntu/tp-coaching-webforce3/log`
+
 /dev/vdc        976M  2.6M  907M   1% /home/ubuntu/tp-coaching-webforce3/log
 
 # Exercice 4 - Git/Github
 Dans PyCharm allez dans File->Settings->Version control->github
 Appuyer sur la croix, en haut a gauche de cette fenetre et selectionnez log in with token.
 entrez votre token github
+
+![Capture d’écran tp 3](https://user-images.githubusercontent.com/122970879/222713953-afdf1313-6691-4db3-b448-12405d4155d2.png)
+
 Vous pouvez maintenant faire des git commit et git push depuis PyCharm
 
-Faire régulierement des commit/push dans github de votre machine local vers github Comme vous avez fait un git clone de votre projet sur votre VM, vous devez faire des git pull pour mettre jour votre Web serveur sans utiliser d'éditeur dans votre VM, ne pas faire de git push à partir de la VM sinon vous risquez d'avoir des conflits à résoudre entre les push faits de votre machine locale et ceux faits à partir de la VM.
+Faire régulierement des commit/push 
 
 `git commit`
 *** Please tell me who you are.
@@ -69,6 +78,7 @@ ctlc + ctlv
 
 Avec l'aide de la documentation Flask, et de la documentation Python mettre des commentaires dans ce script.
 
+```Python
 from flask import Flask
 import logging
  
@@ -83,6 +93,7 @@ def blog():
     return f"Welcome to the Blog"
  
 app.run(host='localhost', debug=True)
+```
 
 installation du flask avec le `sudo apt install flask`
 
